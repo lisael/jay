@@ -3,7 +3,7 @@
 Project template for pony.
 
 `jay` is a small shell tool that creates a minimal pony project with a sensible
-`Makefile`. It includes a tests and bench out of the box.
+`Makefile`. It includes tests and benchmarks out of the box.
 
 It's only tested on GNU/Linux with GNUMake at the moment. Please test on your
 environment fix the script, and send a PR.
@@ -13,7 +13,7 @@ environment fix the script, and send a PR.
 Install jay
 
 ```
-git clone ... 
+git clone https://github.com/lisael/jay.git
 make help
 make install prefix=$HOME
 ```
@@ -86,6 +86,7 @@ It does the job as-is, but we may add some refinements:
 
 1. What does `jay` mean ?
   - Nothing. I wrote this an evening listening to Jay Reatard.
+  - 3 letters, left-hand/right-hand balanced on a qwerty keyboard, no know tool with the same name... Perfect name.
 
 2. Can I help ?
   - Sure! Open an issue, a PR, get in touch with me (`lisael` on freenode) for any comment,
