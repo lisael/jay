@@ -86,10 +86,12 @@ It does the job as-is, but we may add some refinements:
 
 1. What does `jay` mean ?
   - Nothing. I wrote this an evening listening to Jay Reatard.
-  - 3 letters, left-hand/right-hand balanced on a qwerty keyboard, no know tool with the same name... Perfect name.
+  - 3 letters, left-hand/right-hand balanced on a qwerty keyboard, no known tool with the same name... Perfect name.
+  - Did I told you about Jay Reatard ? I should have.
 
 2. Can I help ?
   - Sure! Open an issue, a PR, get in touch with me (`lisael` on freenode) for any comment,
   suggestion or critics. I'm sure if you start using it you'll need features in
   `jay` or in the Makefile. Please share !
   - If you like this, spread the word.
+  - Did you know that Jay plays with Lost Sounds ? 
