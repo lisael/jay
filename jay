@@ -34,7 +34,7 @@ git init
 
 ### Create Main
 echo '"""
-#pkgname#.pony
+#filename#
 
 Do #pkgname# stuff.
 """
@@ -44,6 +44,7 @@ actor Main
   new create(env: Env) =>
     env.out.print("Hello")
 ' > $MAIN_FILE
+sed -i "s|#filename#|$MAIN_FILE|" $MAIN_FILE
 
 sed -i "s/#pkgname#/$PKG_NAME/" $MAIN_FILE
 if [ $IS_LIB -eq 0 ]; then
@@ -82,7 +83,7 @@ actor Main
   let bench: PonyBench
   new create(env: Env) =>
     bench = PonyBench(env)
-    bench[I32]("Add", lambda(): I32 => I32(2) + 2 end, 1000)
+    bench[I32]("Add", {(): I32 => I32(2) + 2}, 1000)
 
 ' > $PKG_NAME/bench/bench_$PKG_NAME.pony
 
